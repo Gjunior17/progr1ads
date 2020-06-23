@@ -1,0 +1,20 @@
+'' '10. Faça um programa de cálculo ou novo valor do salário de um funcionário. Informações do usuário
+salário atual (ex. 1250,00) e a porcentagem de reajuste (ex. 13,5%). '' '
+# Função onde será feito o reajuste salarial
+def  reajuste ( salario_funcionario , percentual_reajuste ):
+    # Variável onde será feito o cálculo do reajuste salarial.
+    reajuste  =  salario_funcionario  *  percentual_reajuste  /  100
+    # Variável onde será feito uma soma do salário antigo + ou reajuste salárial
+    novo_salario  =  salario_funcionario  +  reajuste
+    #Exibir o resultado do novo salário 
+    print ( "O seu novo salário será de R $%. 2f"  %  novo_salario )
+# Função principal
+def  main ():
+    # Variável onde será armazenado ou o valor do salário do funcionário fornecido pelo usuário 
+    salario_funcionario  =  float ( input ( "Informe seu salario atual:" ))
+    # Variável onde será armazenado ou reajuste percentual fornecido pelo usuário
+    percentual_reajuste  =  float ( input ( "Relatório ou porcentagem de reajuste:" ))
+    #Chamar a função reajuste
+    reajuste ( salario_funcionario , percentual_reajuste )
+#Chamar a função principal 
+main ()
