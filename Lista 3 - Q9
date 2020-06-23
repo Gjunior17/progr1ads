@@ -1,0 +1,33 @@
+9 - Faça um programa que leia um número inteiro menor que 1000 e imprima uma quantidade de centenas, centenas e unidades iguais.
+Observando os termos no plural, a colocação do "e", da vírgula entre outros. Exemplo:
+- 326 = 3 centenas, 2 centenas e 6 unidades
+- 12 = 1 dezena e 2 unidades 
+- Testar com: 326, 300, 100, 320, 310, 305, 301, 101, 311, 111, 25, 20, 10, 21, 11, 1, 7 e 16
+'' '
+
+num  =  int ( input ( 'Informe um número inteiro positivo menor que 1000:' )))
+se  num  > =  1000 :
+  print ( 'Por favor, digite um número menor que 1000.' )
+  exit ()
+
+num1  =  num
+unidade  =  num  %  10
+num  = ( num  -  unidade ) /  10
+dezena  =  num  %  10
+num  = ( num  -  dezena ) /  10
+centena  =  num
+
+se  unidade  >  1 :
+  unidade_print  =  'unidades'
+mais :
+  unidade_print  =  'unidade'
+se  dezena  >  1 :
+  dezena_print  =  'dezenas'
+mais :
+  dezena_print  =  'dezena'
+se  centena  >  1 :
+  centena_print  =  'centenas'
+mais :
+  centena_print  =  'centena'
+
+print ( número do número { num1 } tem: { centena : .0f }  { centena_print } , { dezena : .0f }  { dezena_print } e { unidades : .0f }  { unidade_print } . ' )
