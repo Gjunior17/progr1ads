@@ -1,0 +1,21 @@
+1. Faça um programa que solicite ao usuário o valor do litro de combustível
+(ex. 4,75) e quanto em dinheiro ele deseja abastecer (ex. 50,00).
+Calcule quantos litros de combustível ou o usuário obtenha com esses valores.
+# Função no qual será feito o cálculo e a exibição do valor.
+def  value_per_lt ( valor_usuario , valor_combustivel ):
+    # Fórmula para calcular o usuário não qualificado ou o valor do usuário dividido pelo combustível
+    valor_final  =  valor_usuario  /  valor_combustivel
+    #Exibir o resultado do cálculo e determinar o fim do programa.
+    print ( "Valor de R $%. 2f teremos% .2f Lt"  % ( valor_usuario , valor_final ))
+
+# Função principal onde as variáveis ​​podem usar na função value_per_lt
+def  main ():
+    # Variável onde armazena ou valor em dinheiro que usuário usa para simulação
+    valor_usuario  =  float ( input ( "Insira o valor da permissão em reais:" ))
+    # Variável onde será armazenado ou valor do litro da galosina informado pelo cliente 
+    valor_combustivel  =  float ( input ( "Insira o valor do litro da gasolina:" ))
+    #chamar a função value_per_lt onde será feito os cálculos
+    value_per_lt ( valor_usuario , valor_combustivel )
+
+#chamar a função principal
+main ()
