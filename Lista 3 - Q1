@@ -1,0 +1,25 @@
+'' '1 - Faça um programa que faça dois números e imprima o maior deles.' '
+# Função onde será identificado ou o maior número com base nas condições
+def  maior ( valor_1 , valor_2 ):
+	# Condição onde o primeiro valor é maior que o segundo
+	se  valor_1  >  valor_2 :
+		#Exibir o primeiro valor como sendo o maior
+		print ( "O maior número é% d"  %  valor_1 )
+	# Condição onde os valores serão iguais
+	elif  valor_1  ==  valor_2 :
+		#Exibir que os valores são iguais
+		print ( "Os valores se equivalem" )
+	# Condição onde o segundo número é maior que o primeiro
+	mais :
+		#Exibir o segundo valor como sendo o maior
+		print ( "O maior número é% d"  %  valor_2 )
+# Função principal
+def  main ():
+	# Variável onde será armazenado ou o primeiro valor fornecido pelo usuário
+	valor_1   =  int ( input ( "Insira seu primeiro valor:" ))
+	# Variável onde será armazenado ou o segundo valor fornecido pelo usuário
+	valor_2   =  int ( input ( "Insira seu segundo valor:" ))
+	#Chamar a função maior
+	maior ( valor_1 ; valor_2 )
+#Chamar a função principal
+main ()
