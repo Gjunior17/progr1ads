@@ -1,0 +1,21 @@
+'' '3. Faça um programa que calcule a média de consumo de combustível de um veículo.
+ O usuário deve informar o KM inicial (ex. 12500 km) ou o KM final (ex. 12700 km)
+  e quantos litros foram gastos no percurso. 
+  # Função onde será feito o cálculo da média de consumo de combustível
+def  calc ( Km_inicial , Km_final , consumo ):
+    # Cálculo da média onde será feito a partir da distância final final, deixando o dividendo inicial pelo consumo de gasolina
+    media  = ( Km_final  -  Km_inicial ) /  consumo
+    #Exibir ou resultado da média de consumo de gasolina por km e finalizar uma aplicação.
+    print ( "Uma mídia de consumo de combustível igual a% .2fKm por Lt."  %  mídia )
+
+# Função principal da aplicação
+def  main ():
+    # Variável que irá armazenar o valor da distância inicial
+    Km_inicial  =  int ( input ( "Insira o valor da distância inicial:" ))
+    # Variável que irá armazenar o valor da distância final
+    Km_final  =  int ( input ( "Insira o valor da distância final:" ))
+    # Variável que irá armazenar uma quantidade de gasolina usada durante todo o rastreamento.
+    consumo  =  int ( input ( "Quantos litros de combustível foram gastos durante o percurso:" ))
+    #Chamar a função calc
+    calc ( Km_inicial , Km_final , consumo )
+main ()
