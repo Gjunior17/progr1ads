@@ -1,0 +1,54 @@
+'' '10  - Escreva um programa que converta valores de polegadas 
+	em uso usando a seguinte fórmula: 1 polegada = 2,54cm; '' 
+#cm = centímetro
+#in = polegada
+# Função de chamada para fazer condições de escolha para selecionar qual conversão usar.
+ opções de def ( escolha ):
+# Se a opção 1 para escolhida será solicitada ou terá valor de conversão em polegadas para cm.    
+    se  escolher  ==  1 :
+#Ler uma variável inch que solicita ou informa o valor pelo usuário.
+        inch  =  float ( input ( "Informe o valor em polegadas:" ))
+#Chamar a função onde será feita inch_to_cm.
+        inch_to_cm ( inch )
+#Se a condição 2 para escolha ou valor de conversão será convertida em polegadas.
+    elif  escolher  ==  2 :
+#Ler uma variável cm que solicita ou informa o valor pelo usuário.
+        cm  =  float ( input ( "Informe o valor em porcentagens:" ))
+#Chamar a função onde será feita a conversão cm_to_inch
+        cm_para_inch ( cm )
+
+#Chamar condição se o valor informado em escolher não para 1 ou 2.
+    mais :
+        print ( 'valor inválido' )
+
+# Função onde será efetuada a conversão de polegadas para cm.
+def  inch_to_cm ( inch ):
+#Valor padrão de 1 polegada para centímetro.
+    cm  =  2,54
+# variável onde será feita o cálculo da conversão 
+    conversor  =  polegada  *  cm
+#Exibir o resultado da conversão e o valor registrado pelo usuário
+    print ( "o valor% .2f em é% .2f cm"  % ( polegada , conversor ))
+
+# Função para fazer conversão de polegadas para polegadas
+def  cm_to_inch ( cm ):
+# Variável onde é armazenado ou valor padrão de conversão
+    inch  =  2.54
+# Variável onde será feito o cálculo da conversão
+    conversor  =  cm  /  polegada
+#Exibir o resultado da conversão e o valor registrado pelo usuário
+    print ( "o valor% .2f cm é% .2f in"  % ( cm , conversor ))
+
+# Função principal do script
+def  main ():
+#Imprimir o nome do programa e como 2 opções de conversões
+    print ( "CONVERSOR DE ÁREA" )
+    print ( "1 PARA POLEGADAS PARA CM" )
+    print ( "2 PARA CM PARA POLEGADAS" )
+# Variável onde será armazenada como opção do usuário
+    escolha  =  int ( entrada ( ">" ))
+#Chamar a função de condições de escolhas
+    opções ( escolha )
+
+#chamar função principal do script
+main ()
