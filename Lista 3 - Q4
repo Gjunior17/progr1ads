@@ -1,0 +1,54 @@
+4 - Faça um programa que lê como duas notas parciais gravadas por um aluno em uma disciplina ao 
+longo de um semestre, e calcule sua média. A apresentação de conceitos obedece à tabela abaixo:
+  Média de Aproveitamento Conceito
+    Entre 9.0 e 10.0 A
+    Entre 7.5 e 9.0 B
+    Entre 6.0 e 7.5 C
+    Entre 4.0 e 6.0 D
+    Entre 4.0 e zero E
+O algoritmo deve mostrar na tela como notas, a média, o conceito correspondente e a mensagem 
+"APROVADO" é o conceito para A, B ou C ou "REPROVADO" é o conceito para D ou E.
+'' '
+
+nota1  =  float ( input ( 'Por favor, informe sua primeira nota:' ))
+nota2  =  float ( input ( 'Pr favor, informe sua segunda nota:' ))
+
+se  nota1  <  0  ou  nota1  >  10 :
+    print ( 'Você precisa digitar um valor entre 0 e 10.' )
+    exit ()
+se  nota2  <  0  ou  nota2  >  10 :
+    print ( 'Você precisa digitar um valor entre 0 e 10.' )
+    exit ()
+  
+media  =  flutuante ( nota1  +  nota2 ) /  2
+
+se  mídia  ==  9  e  mídia  ==  10 :
+  print (a Nota 1 foi: { nota1 : .1f } ' )
+  print (a Nota 2 foi: { nota2 : .1f } ' )
+  print ( f'Sua Média foi: { media : .1f } ' )
+  print ( f'Conceito: A ' )
+  print ( f'APROVADO ' )
+elif  media  > =  7.5  e  media  <  9 :
+  print (a Nota 1 foi: { nota1 : .1f } ' )
+  print (a Nota 2 foi: { nota2 : .1f } ' )
+  print ( f'Sua Média foi: { media : .1f } ' )
+  print ( f'Conceito: B ' )
+  print ( f'APROVADO ' )
+elif  media  > =  6  e  media  <  7.5 :
+  print (a Nota 1 foi: { nota1 : .1f } ' )
+  print (a Nota 2 foi: { nota2 : .1f } ' )
+  print ( f'Sua Média foi: { media : .1f } ' )
+  print ( f'Conceito: C ' )
+  print ( f'APROVADO ' )
+elif  media  > =  4  e  media  <  6 :
+  print (a Nota 1 foi: { nota1 : .1f } ' )
+  print (a Nota 2 foi: { nota2 : .1f } ' )
+  print ( f'Sua Média foi: { media : .1f } ' )
+  print ( f'Conceito: D ' )
+  print ( f'REPROVADO ' )
+ mídia  elif <  4  e  mídia  > =  0 :
+  print (a Nota 1 foi: { nota1 : .1f } ' )
+  print (a Nota 2 foi: { nota2 : .1f } ' )
+  print ( f'Sua Média foi: { media : .1f } ' )
+  print ( f'Conceito: E ' )
+  print ( f'REPROVADO ' )
