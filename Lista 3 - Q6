@@ -1,0 +1,43 @@
+6 - Faça um programa que calcule como raízes de uma equação do segundo grau, 
+na forma ax2 + bx + c. O programa solicita os valores de a, faça
+as consistências, informações ao usuário nas seguintes situações:
+uma. Se o usuário informar o valor de A igual a zero, a equação não é o segundo
+grau e o programa não deve fazer pedir os demais valores, sendo encerrado;
+b. Se o delta calculado para negativo, uma equação não possui valores reais. Informe
+ao usuário e encerrar o programa;
+c. Se o delta calculado para igual a zero a equação possui apenas uma raiz real;
+informe-um ao usuário;
+d. Se o delta para positivo, uma equação possui duas raízes reais; informe-como ao usuário;
+'' '
+
+de  matemática  importação  sqrt
+
+a  =  float ( entrada ( 'Digite o coeficiente A =' ))
+b  =  float ( entrada ( 'Digite o coeficiente B =' ))
+c  =  float ( entrada ( 'Digite o coeficiente C =' ))
+
+delta  =  b ** 2 - 4 * um * c
+se  delta  <  0 :
+  print ( 'A equação não possui raiz real' )
+  exit ()
+
+raizdelta  =  sqrt ( delta )
+x1  = ( - b + raizdelta ) / ( 2 * a )
+x2  = ( - b + raizdelta ) / ( 2 * a )
+
+se  a  ==  0 :
+  print ( 'A equação não é o segundo grau' )
+  exit ()
+ delta  elif <  0 :
+  print ( 'A equação não possui raiz real' )
+  exit ()
+ delta  elif ==  0 :
+  print ( 'A equação possui apenas uma raiz real.' )
+  print ( f'Delta = { delta } ' )
+  print ( f'x1 = { x1 } ' )
+ delta  elif >  0 :
+  print ( 'A equação possui duas raizes reias' )
+  print ( f'Delta = { delta } ' )
+  print ( nome da Delta = { raizdelta } ' )
+  print ( f'x1 = { x1 } ' )
+  print ( f'x2 = { x2 } ' )
