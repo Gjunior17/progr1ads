@@ -1,0 +1,25 @@
+8 - Faça um Programa que peça um dado no formato dd / mm / aaaa e 
+determinar se é a mesma uma data válida.
+'' '
+
+dia  =  int ( input ( 'Informe o dia:' ))
+mes  =  int ( input ( 'Informe o mês:' ))
+ano  =  int ( input ( 'Informe o ano:' ))
+
+se  dia  ==  29 :
+  se  mes  ==  2 :
+    print ( para dados { dia } / { mes } / { ano } , é válido. ' )
+  mais :
+    print ( f'A data { dia } / { mes } / { ano } , é inválida. ' )
+ dia  elif >  0  e  dia  <=  31 :
+  se  mes  >  0  e  mes  em [ 1 , 3 , 5 , 7 , 8 , 10 , 12 ]:
+    print ( para dados { dia } / { mes } / { ano } , é válido. ' )
+  mais :
+    print ( f'A data { dia } / { mes } / { ano } , é inválida. ' )
+ dia  elif >  0  e  dia  <=  30 :
+  se  mes  >  0  e  mes  em [ 4 , 6 , 9 , 11 ]:
+    print ( para dados { dia } / { mes } / { ano } , é válido. ' )
+  mais :
+    print ( f'A data { dia } / { mes } / { ano } , é inválida. ' )
+mais :
+  print (para ' Dados Inválidos.' )
