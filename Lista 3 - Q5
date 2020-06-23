@@ -1,0 +1,25 @@
+5 - Faça um programa com três lados de um triângulo. O programa pode
+informar se os valores podem ser um triângulo. Indique, case os lados formem
+um triângulo, se é o mesmo: equilíbrio, isósceles ou escaleno.
+Dicas:
+- Três lados formam um triângulo quando um soma de dois lados para 
+maior que o terceiro;
+- Triângulo Equilátero: três lados iguais;
+- Triângulo isósceles: separados dois lados iguais;
+- Triângulo Escaleno: três lados diferentes;
+'' '
+
+a  =  int ( input ( 'Informe o lado A do triângulo:' ))
+b  =  int ( input ( 'Informe o lado B do triângulo:' ))
+c  =  int ( input ( 'Informe o lado C do triângulo:' ))
+
+se  um  <  b  +  c  e  b  <  a  +  c  e  c  <  a  +  b :
+  print ( para os lados acima PODEM FORMAR um triângulo ' , end = ' ' )
+  se  a  ==  b  ==  c :
+    print ( f'EQUILÁTERO! ' )
+  se  a  ! =  b  ! =  c  ! =  a :
+    print ( 'ESCALENO!' )
+  mais :
+    print ( 'ISÓSCELES!' )
+mais :
+  print ( para os lados acima NÃO PODEM FORMA um triângulo. ' )
