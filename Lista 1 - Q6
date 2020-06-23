@@ -1,0 +1,17 @@
+'' '6 - Escreva um programa que leia uma temperatura
+ em graus Fahrenheit, transformar em graus Celsius 
+ e exiba o resultado. '' '
+# Função para fazer a conversão de temperatura
+def  temperatura ( entrada_F ):
+    #Fórmula de conversão de Fahrenheit para Celsius com a fórmula: (F - 32) * / 9
+    celsius  = ( entrada_F  -  32 ) *  5  /  9
+    #Exibir tela ou resultado de conversão de graus Fahrenheit para Celsius
+    print ( "A temperatura será de% .3fºC"  %  celsius )
+# Função principal 
+def  main ():
+    #Armazenar os dados que vão entrar na variável entrada_F
+    entrada_F  =  float ( input ( "Informe o valor da temporada em ºF:" ))
+    #Chamar a função temperatura
+    temperatura ( entrada_F )
+#Chamar função principal
+main ()
