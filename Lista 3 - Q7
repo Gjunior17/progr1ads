@@ -1,0 +1,10 @@
+7 - Faça um programa que peça um número correspondente a um ano determinado 
+e em seguida informe se este é um ano ou não bissexto.
+'' '
+
+ano  =  int ( input ( 'Qual ano você quer analisar?' ))
+
+se  ano  %  4  ==  0  e  ano  %  100  ! =  0  ou  ano  %  400  ==  0 :
+  imprimir ( f'O ano { ano } E bissexto!' )
+mais :
+  imprimir ( f'O ano { ano } NÃO E bissexto!' )
