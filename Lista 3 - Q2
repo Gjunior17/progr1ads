@@ -1,0 +1,25 @@
+'' '2 - Faça um Programa que peça um valor e um valor na tela se o valor for positivo ou negativo. '' '
+# Função onde indica o número positivo, neutro ou negativo.
+ número do def ( valor ):
+	# Condição onde número fornecido pelo usuário será maior que 0
+	se  valor  >  0 :
+		#Exibir que número é positivo
+		print ( "O número é positivo" )
+	# Condição em que número fornecido pelo usuário é neutro, ou seja, é igual a 0
+	elif  valor  ==  0 :
+		#Exibir que número é neutro
+		print ( "O número é neutro" )
+	# Condição onde número fornecido pelo usuário é negativo.
+	mais :
+		#Exibir que número negativo
+		print ( "O número é negativo" )
+
+# Função principal 
+def  main ():
+	# Variável onde armazenado ou valor fornecido pelo usuário
+	valor  =  int ( input ( "Insira um número permitido:" ))
+	#chamar função number
+	número ( valor )
+
+#chamar função principal
+main ()
