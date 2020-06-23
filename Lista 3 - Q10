@@ -1,0 +1,26 @@
+10 - Faça um programa para ler três notas parciais de um aluno. O programa deve calcular a média alcançada por aluno e apresentar:
+- A mensagem "Aprovado", com média para maior ou igual a 7, com média média alcançada;
+- A mensagem "Reprovado", com média para menor que 7, com média média alcançada;
+- A mensagem "Aprovado com Distinção", tem uma média de 10.
+'' '
+
+nota1  =  float ( entrada ( 'Informe a 1 ° nota:' ))
+nota2  =  float ( entrada ( 'Informe a 2 ° nota:' ))
+
+media  =  flutuante ( nota1  +  nota2 ) /  2
+
+se  nota1  >  10  ou  nota1  <  0 :
+    print ( f'Sua nota foi { nota1 } , uma nota vai até 10, VERIFIQUE SUA NOTA! ' )
+    exit ()
+elif  nota2  >  10  ou  nota2  <  0 :
+    print ( f'Sua nota foi { nota2 } , uma nota vai até 10, VERIFIQUE SUA NOTA! ' )
+    exit ()
+elif  media  > =  7  e  media  <  10 :
+    print ( f'APROVADO! ' )
+    print ( f'Sua média foi de { media } , PARABÉNS, você passou de ano. ' )
+ mídia  elif <  7 :
+    print ( f'REPROVADO! ' )
+    print ( f'Sua média foi de { media } , ESTUDE, você ficou em recuperação. ' )
+elif  media  ==  10 :
+    print ( f'APROVADO COM DISTINÇÃO. ' )
+    print ( sua média foi de { media } , PARABÉNS, você foi excelente. ' )
