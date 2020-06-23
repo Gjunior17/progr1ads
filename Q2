@@ -1,0 +1,17 @@
+'' '2 - Sabendo que a cotação atual do dólar americano é de R $ 4,47, receba um valor em reais do usuário e converta para dólares. Exemplo de saída: $ 1,00 '' '
+# Função feita para executar o cálculo da conversão do dólar real e mostrar o resultado final.
+def  realtodolar ( usuario_valor , dolar ):
+        # Cálculo feito para conversor ou valor em BRL para USD.
+        Conversão  =  dolar  /  usuario_valor
+        #Imprimir o resultado conversão.
+        imprimir ( '$%. 2f'  %  Conversão )      
+# Função principal
+def  main ():
+    #variavel usado para ler ou não valor que o usuário coloca em BRL.
+    usuario_valor  =  float ( input ( "Insira o valor em reais:" ))
+    #variavel usado para ler a cotação do dólar americano.
+    dolar  =  flutuante ( input ( "Valor do dólar hoje:" ))   
+    #chamar função realtodolar
+    realtodolar ( usuario_valor , dolar )
+#Chamar função principal
+main ()
