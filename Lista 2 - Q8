@@ -1,0 +1,33 @@
+'' '8 - Escreva um programa que leia um valor inteiro e calcule seu cubo.' ''
+# Função onde será feito o cálculo do quadrado
+def  Quadrado ( valor_entrance , valor_exponciancao ):
+    # Formulário para encontrar o quadrado da variável valor_entrance.
+    Quadrado  =  valor_entrance  **  2
+    #Exibir o resultado do quadrado.
+    imprimir ( "O Quadrado fazer valor% d e% d"  % ( valor_entrance , Quadrado ))
+
+# Função onde será feito o cálculo do cubo
+def  cubo ( valor_entrada , valor_exponciancao ):
+    # Formulário para encontrar o cubo da variável valor_entrance.
+    cubo  =  valor_entrance  **  3
+    #Exibir o resultado do cubo.
+    print ( "O cubo do valor% d é% d"  % ( valor_entrance , cubo ))
+
+# Função principal
+def  main ():
+    # Variável onde armazenado ou valor desejado pelo usuário para exponenciação
+    valor_entrada  =  int ( input ( "Informe o valor para calcular:" ))
+    # Variável onde armazenado ou valor da exponenciação no usuário utilizará
+    valor_exponciancao  =  int ( input ( "Informe o valor da exponianção:" ))
+    # Condição para caso seja um quadrado
+    se  valor_exponciancao  ==  2 :
+        #Chamar a função quadrado
+        Quadrado ( valor_entrance , valor_exponciancao )
+    # Condição para caso seja um cubo
+    elif  valor_exponciancao  ==  3 :
+        #Chamar função cubo
+        cubo ( valor_entrance , valor_exponciancao )
+
+
+#Chamar função principal
+main ()
