@@ -1,0 +1,32 @@
+'' '4 - Escreva um programa que leia uma temperatura em graus Fahrenheit, 
+transforme-em graus Celsius e exiba o resultado. '' '
+def  temp ( escolha ):
+    # Condição que deve ser seguida se você escolher o usuário para Celsius.
+    se  escolher  ==  "C" :
+        # Variável onde pedirá ou não converterá nenhum conversor de usuário qualificado em graus Fahrenheit para Celsius.
+        F  =  float ( input ( "Insira a temperatura em graus Fahrenheit:" ))
+        # Variável onde aprensenta a fórmula de conversão de ºF para ºC 
+        C  = ( F  -  32 ) *  5  /  9
+        #Exibir o resultado da conversão em Celsius.
+        print ( "A temperatura em Celsius será de% .2f"  %  C )
+
+    # Condição que deve ser seguida se você escolher o usuário para Fahrenheit.
+    elif  escolha  ==  "F" :
+        # Variável onde pedirá ou não converterá nenhum usuário qualificado em Celsius para Fahrenheit para Celsius.
+        C  =  float ( input ( "Insira a temperatura em celsius:" ))
+        # Variável onde apresenta uma fórmula de conversão de ºC para ºF.
+        F  = ( C  *  9  /  5 ) +  32
+        #Exibir o resultado da conversão em Fahrenheit.
+        print ( "Uma temperatura em graus Fahrenheit será de% .2f"  %  F )
+    mais :
+        #Exibir que letra que foi digitada na variável escolha inválida.
+        print ( "Letra para conversão inválida!" )
+
+# Função principal do aplicativo onde será solicitada a unidade de temperatura selecionada para conversão.
+def  main ():
+    # Variável onde irá ler a letra que representa a unidade selecionada
+    escolha  =  entrada ( "Informe sua conversão obtida:" )
+    #Chamar a função temp (escolha) onde será feita a conversão.
+    temp ( escolha )
+#Chamar a função principal de aplicação.
+main ()
