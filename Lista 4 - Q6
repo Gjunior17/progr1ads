@@ -1,0 +1,56 @@
+'' '6 - Faça um programa que calcule como raízes de uma equação do segundo grau, na forma ax2 + bx + c. O programa solicita os valores de um, faça como consistências, informações ao usuário nas seguintes situações:
+uma. Se o usuário informar o valor de A igual a zero, a equação não é o segundo grau e o programa não deve solicitar os demais valores, sendo encerrado;
+b. Se o delta calculado para negativo, uma equação não possui valores reais. Informar ao usuário e encerrar o programa;
+c. Se o delta calculado para igual a zero a equação possui apenas uma raiz real; informe-um ao usuário;
+d. Se o delta para positivo, uma equação possui duas raízes reais; informe-as ao usuário; '' '
+#importar uma função sqrt da biblioteca math
+de  matemática  importação  sqrt
+
+# Função onde será feita uma fórmula de bhaskara 
+def  d ( a , b , c ):
+	#retornar o valor do delta
+	voltar  b  **  2  -  4  *  a  *  c
+
+# Funções onde as condições para prosseguir ou calcular
+def  condições ( d , a , b , c ):
+	# Variável delta para armazenar o valor de bhaskara
+	delta  =  d
+	#Se delta para menor que 0
+	se  delta  <  0 :
+		#Exibir que a equação não terá valor real
+		print ( "A equação não terá valor real" )
+	#Se delta para igual a 0
+	 delta  elif ==  0 :
+		#Exibir que a equação possui um valor real
+		print ( "Esta equação possui apenas uma raiz real% d"  %  delta )
+	#Se delta maior igual a 0
+	 delta  elif > =  0 :
+		# variável x1 armazena o formulário para encontrar a raiz do x1
+		x1  =  -  b  +  sqrt ( delta ) / ( 2  *  a )
+		# variável x1 armazena um formulário para encontrar a raiz do x2
+		x2  =  -  b  -  sqrt ( delta ) / ( 2  *  a )
+		#Exibir a raiz x1
+		print ( "Esta equação possui raiz x1:% s"  %  x1 )
+		#Exibir a raiz x2
+		print ( "Esta equação possui raiz x2:% s"  %  x2 )
+
+# função principal 
+def  main ():
+	# variável que armazena o valor fornecido pelo usuário
+	a  =  int ( input ( "Informe o valor de a:" ))
+	# variável que armazena o valor do usuário fornecido pelo usuário
+	b  =  int ( input ( "Informe o valor de b:" ))
+	# variável que armazena o valor do usuário fornecido pelo usuário
+	c  =  int ( input ( "Informe o valor de c:" ))
+	#Se a para igual a 0
+	se  a  ==  0 :
+		#Exibir que equação não é de segundo grau
+		print ( "Esta equação não é de segundo grau. Por favor, coloque uma equação válida!" )
+	# Senão
+	mais :
+		#chamar função d
+		d ( a , b , c )
+		#chamar função conditions
+		condições ( d , a , b , c )
+#chamar função principal 
+main ()
