@@ -1,0 +1,56 @@
+'' '9 - Faça um programa que leia um número inteiro menor que 1000 e imprima uma quantidade de centenas,
+ dezenas e unidades do mesmo.
+Observando os termos no plural, a colocação do "e", da vírgula entre outros. Exemplo:
+- 326 = 3 centenas, 2 centenas e 6 unidades
+- 12 = 1 dezena e 2 unidades 
+- Testar com: 326, 300, 100, 320, 310.305, 301, 101, 311, 111, 25, 20, 10, 21, 11, 1, 7 e 16 '' '
+def  unidade ( número ):
+	#retorna a unidade  
+	return  numero  //  1  %  10
+# função dezena onde será feito o cálculo da dezena
+def  dezena ( número ):
+	#retorna a dezena
+	return  numero  //  10  %  10
+# função centena onde será feito o cálculo da centena
+def  centena ( número ):
+	return  numero  //  100  %  10
+Nº de funções onde tem condições para saber quantas centenas, unidades ou centenas 
+ números de def ( número , unidade , dezena , centena ):
+	#armazena ou retorno da unidade variável
+	u  =  unidade ( número )
+	#armazena o retorno da variável dezena
+	d  =  dezena ( número )
+	#armazena o retorno da variável centena
+	c  =  centena ( número )
+	#se numero for menor que 10
+	se  numero  <  10 :
+		#Exibir o número digitado pelo usuário e a quantidade de unidades
+		print ( "% d =% d unidades"  % ( número , u ))
+	#se número para maior igual a 10 e menor que 100
+	 numero  elif > =  10  e  numero  <  100 :
+		#Exibir o número digitado pelo usuário, quantidade de unidades e dezena (s)
+		print ( "% d =% d centenas e% d unidades"  % ( número , d , u ))
+	#se o número para maior igual a 100 e menor que 1000
+	 numero  elif > =  100  e  numero  < 1000 :
+		#exibir o número digitado pelo usuário, quantidade (s) de unidades, dezena (s) e centena (s)
+		print ( "% d =% d centenas,% d unidades e% d unidades"  % ( número , c , d , u ))
+	# senão
+	mais :
+		#exibir que número inválido.
+		print ( "Número inválido! Por favor digite um número até 1000!" )
+
+# Função principal 
+def  main ():
+	# Variável armazena o número fornecido pelo usuário
+	número  =  int ( input ( "Insira o número até 1000:" ))
+	#chamar função unidade
+	unidade ( numero )
+	#chamar função dezena
+	dezena ( numero )
+	#chamar função centena
+	centena ( numero )
+	#chamar função numbers
+	números ( número , unidade , dezena , centena )
+
+#chamar função principal
+main ()
