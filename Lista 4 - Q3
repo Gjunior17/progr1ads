@@ -1,0 +1,44 @@
+'' '3 - Faça um programa que leia um número e exiba o dia correspondente na semana. (1-Domingo, 2-Segunda, etc.), se você digitar outro valor, deve aparecer um valor inválido. '' '
+def  day_a_week ( número ):
+        #Se o dia da semana para igual a 1
+        se  numero  ==  1 :
+                #exibir que o número corresponde a domingo
+                print ( "Esse número corresponde ao domingo" )
+        #Se o dia da semana para igual a 2
+         número  elif ==  2 :
+                #Exibir que número corresponde à segunda-feira
+                print ( "Esse número corresponde a segunda-feira" )
+        #Se o dia da semana para igual a 3
+         número  elif ==  3 :
+                #Exibir o número corresponde a terça-feira
+                print ( "Esse número corresponde a terça-feira" )
+
+        #Se o dia da semana para igual a 4
+         número  elif ==  4 :
+                #Exibir o número corresponde à quarta-feira
+                print ( "Esse número corresponde a quarta-feira" )
+        #Se o dia da semana para igual a 5
+         número  elif ==  5 :
+                #Exibir que número corresponde a uma quinta-feira
+                print ( "Esse número corresponde a quinta-feira" )
+        #Se o dia da semana para igual a 6
+         número  elif ==  6 :
+                #Exibir que número corresponde a sexta-feira
+                print ( "Esse número corresponde a sexta-feira" )
+        #Se o dia da semana para igual a 7
+         número  elif ==  7 :
+                #Exibir o número corresponde a sábado
+                print ( "Esse número corresponde a sábado" )
+        # Senão
+        mais :
+                #Exibir número inválido
+                print ( "número inválido!" )
+
+# função principal
+def  main ():
+        # Variável onde será armazenado ou número fornecido pelo usuário
+        número  =  int ( input ( "Insira um número permitido:" ))
+        #chamar a função day_a_week
+        day_a_week ( numero )
+#chamar a função principal 
+main ()
