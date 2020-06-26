@@ -1,0 +1,19 @@
+'' '7 - Faça um Programa que peça um número correspondente a um determinado ano e em seguida informe se este é ou não como um sexo. '' '
+# Função onde terá condição de identificar se o ano é bissexto ou não
+ ano de definição ( ano ):
+	#Se tem um resto 4 igual e um com módulo 100 diferente de 0 ou um módulo 400 é igual 0
+	se  ano  %  4  ==  0  e  ano  %  100  ! =  0  ou  ano  %  400  ==  0 :
+		#exibir que o ano é bissexto
+		print ( "O ano% d é bissexto !!"  %  ano )
+	# Senão 
+	mais :
+		#exibir que o ano não é bissexto
+		print ( "O ano% d não é bissexto!"  %  ano )
+# função principal
+def  main ():
+	# variável que armazena um número disponível pelo usuário
+	ano  =  int ( input ( "Insira o ano que você deseja:" ))
+	#chamar a função year
+	ano ( ano )
+#chamar a função principal 
+main ()
