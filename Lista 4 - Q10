@@ -1,0 +1,38 @@
+10 - Faça um programa para ler três notas parciais de um aluno. O programa deve calcular a média alcançada por aluno e apresentar:
+- A mensagem "Aprovado", com média para maior ou igual a 7, com média média alcançada;
+- A mensagem "Reprovado", com média para menor que 7, com média média alcançada;
+- A mensagem "Aprovado com Distinção", tem uma média de igual a 10. '' '
+def 	calc ( nota1 , nota2 , nota3 ):
+	#retornar o resultado da função
+	return ( nota1  +  nota2  +  nota3 ) /  3
+# função em que as condições para saber se o aluno foi aprovado ou não
+def  media ( nota1 , nota2 , nota3 , calc ):
+	# variável feita para armazenamento ou resultado da função calc
+	media  =  calc ( nota1 ; nota2 ; nota3 )
+	#Se mídia para igual a 10
+	if  media  ==  10 :
+		#Exibir aprovado com distinção 
+		print ( "Parabéns, você foi aprovado com distinção" )
+	#Se mídia para maior igual a 7
+	elif  media  > =  7 :
+		#Exibir aprovado
+		print ( "Parábens, você foi aprovado" )
+	#se uma mídia para menor igual a 7
+	 mídia  elif <  7 :
+		#exibir reprovado
+		print ( "Você foi reprovado, tente novamente no próximo semestre" )
+	
+# função principal
+def  main ():
+	# variável que armazena a primeira nota fornecida pelo usuário 
+	nota1  =  float ( entrada ( "Insira sua primeira nota:" ))
+	# variável que armazena segunda nota fornecida pelo usuário
+	nota2  =  float ( entrada ( "Insira sua segunda nota:" ))
+	# variável que armazena terceira nota fornecida pelo usuário
+	nota3  =  float ( entrada ( "Insira sua terceira nota:" ))
+	#chamar função calc
+	calc ( nota1 , nota2 , nota3 )
+	#chamar função media
+	mídia ( nota1 , nota2 , nota3 , calc )
+#chamar função principal 
+main ()
