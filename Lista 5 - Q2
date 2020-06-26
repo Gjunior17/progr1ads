@@ -1,0 +1,29 @@
+'' '2 - Faça um programa que leia um nome de usuário e sua senha e não aceite uma senhaigual
+ ao nome do usuário, mostrando uma mensagem de erro e voltando a solicitar informações. '' '
+def  login ( usuário , senha ):
+    #enquanto for verdade
+    enquanto  True :
+        #se usuário for igual a senha
+        se  usuario  ==  senha :
+            #exibir login inválido
+            print ( "login inválido" )
+            # variável que recebe um nome fornecido pelo usuário
+            usuário  =  entrada ( "informe o nome do usuário:" )
+            # variável que recebe uma senha fornecida pelo usuário
+            senha  =  input ( "informe uma senha:" )           
+        # senão
+        mais :
+            #exibir login aceito 
+            print ( "login aceito" )
+            #parar o loop
+            pausa
+# função principal 
+def  main ():
+    # variável que recebe um nome fornecido pelo usuário
+    usuário  =  entrada ( "informe o nome do usuário:" )
+    # variável que recebe uma senha fornecida pelo usuário
+    senha  =  input ( "informe uma senha:" )
+    #chamar função login (usuário, senha)
+    login ( usuario , senha )
+#chamar função principal
+main ()
