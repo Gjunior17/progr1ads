@@ -1,0 +1,93 @@
+'' '3 - Faça um programa que leia e faça valer as seguintes informações:
+Nome: maior que 3 caracteres;
+Idade: entre 0 e 150;
+Salário: maior que zero;
+Sexo: 'f' ou 'm';
+Estado Civil: 's', 'c', 'v', 'd'; '' '
+def  nome ( nome ):
+    #enquanto for verdade
+    enquanto  True :
+        #n recebe uma quantidade de letras na variável nome
+        n  =  len ( nome )
+        #se n para maior que 3
+        se  n  >  3 :
+            #Exibir nome válido
+            print ( "Nome válido" )
+            #parar o loop
+            pausa
+        # senão
+        mais :
+            #exibir nome inválido
+            print ( "nome inválido" )
+            #repete uma variável nome e crie um loop até que o funcionário receba o nome certo
+            nome  =  entrada ( "informe seu nome:" )
+# função salário onde terá condições para saber se o salário está apto ou não
+def  salário ( salario ):
+    #enquanto for verdade
+    enquanto  True :
+        #se salário para maior que 0
+        se  salario  >  0 :
+            #exibir salário válido
+            print ( "Salário válido" )
+            #parar o loop
+            pausa
+        # senão
+        mais :
+            #exibir salário inválido
+            print ( "Salário inválido" )
+            #repete a variável salário até que o usuário informe um valor adequado
+            salario  =  int ( input ( "Informe seu salário:" ))
+# função sex onde terá as condições de saber se está apto ou não
+def  sexo ( sexo ):
+    #enquanto for verdade
+    enquanto  True :
+        #se sexo para igual am ou f
+        se  sexo  ==  "m"  ou  sexo  ==  "f" :
+            #exibir sexo válido
+            print ( "sexo válido" )
+            #parar o loop
+            pausa
+        # senão
+        mais :
+            #exibir sexo inválido
+            print ( "sexo inválido" )
+            #repetir uma variável até o usuário inserir uma letra válida
+            sexo  =  input ( "Informe seu sexo:" )
+# função ec para saber se o estado civil do usuário está apto ou não
+def  ec ( estado_civil ):
+    #enquanto for verdade
+    enquanto  True :
+        #se estado civil para c, s, v, d
+        se  estado_civil  ==  "c"  ou  estado_civil  ==  "s"  ou  estado_civil  ==  "v"  ou  estado_civil  ==  "d" :
+            #exibir apto
+            print ( "Apto" )
+            #parar o loop
+            pausa
+        # senão
+        mais :
+            #exibir não apto
+            print ( "Não apto" )
+            #repetir uma variável state civil até o usuário fornecer uma letra apta
+            estado_civil  =  input ( "Informe o seu estado civil:" )
+
+# função principal
+def  main ():
+    # variável onde o usuário fornecerá seu nome
+    nome  =  entrada ( "Informe o seu nome:" )
+    #chamar um nome de função (nome)
+    nome ( nome )
+    # variável onde o usuário irá fornecer seu salário
+    salario  =  int ( input ( "Informe o seu salário:" ))
+    #chamar a função salário (salario)
+    salário ( salario )
+    # variável onde o usuário irá fornecer seu sexo
+    sexo  =  input ( "informe o seu sexo:" )
+    #chamar a função sex (sexo)
+    sexo ( sexo )
+    # variável em que o usuário fornecerá o estado civil
+    estado_civil  =  input ( "informações do seu estado civil:" )
+    #chamar a ec (estado_civil)
+    ec ( estado_civil )
+
+#chamar função principal   
+main ()
