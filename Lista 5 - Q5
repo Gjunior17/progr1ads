@@ -1,0 +1,35 @@
+'' '5 - Altere o programa anterior permitindo que o usuário informe as taxas e as taxas 
+decrescimento inicial. Valide a entrada e permita repetir a operação '' '
+def  calc ( pA , pB , tA , tB ):
+    # variável que armazena o ano inicial
+    ano  =  0
+    #enquanto população A para menor população iguala B
+    enquanto  pA  <=  pB :
+        #pA igual a pA mais tA de pA
+        pA  =  pA  +  pA  *  tA  /  100
+        #pB igual a pB mais tB de pB
+        pB  =  pB  +  pB  *  tB  /  100
+        #cada volta o será adicionado mais 1 ano
+        ano  =  ano  +  1
+
+    #exibir o número de anos necessário para equiparar ou ultrapassar
+    print ( "para população A com taxa de crescimento% .2f por ano ao passar uma população B será necessária% d anos"  % ( tA , ano ))
+
+# Função de índices populacionais onde o usuário fornece ou aumenta o valor em porcentagem 
+ impostos def ( pA , pB ):
+    # variável t1 que armazena ou valor de taxa de crescimento anual permitido pelo usuário
+    tA  =  float ( input ( "Relatório de taxa de crescimento:" ))
+    # variável t1 que armazena ou valor de taxa de crescimento anual permitido pelo usuário
+    tB  =  float ( input ( "Relatório de taxa de crescimento:" ))
+    calc ( pA , pB , tA , tB )
+
+# Função população onde será perguntado pelo usuário como ameaças das ameaças cidades
+def  pop ():
+    # variável pA (população A) armazenada com 80000 conforme o enunciado
+    pA  =  int ( input ( "Informe a população de A:" ))
+    # variável pB (população B) armazenada com 200000 conforme o enunciado
+    pB  =  int ( input ( "Informe a população de B:" ))
+    #chamar a function tax (pA, pB)
+    impostos ( pA , pB )
+#chamar a função pop
+pop ()
