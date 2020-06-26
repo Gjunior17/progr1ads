@@ -1,0 +1,27 @@
+'' '1 - Faça um programa que peça uma nota, entre zero e dez. Mostrar uma mensagem caso
+ valor seja inválido e continue solicitando até que o usuário informe um valor válido.
+'' '
+nota de definição ( nota ):
+    #enquanto for verdade
+    enquanto  True :
+        #se nota maior igual 0 e menor que 0
+        se  nota  > =  0  e  nota  <  10 :
+            #exibir valor válido
+            print ( "valor válido" )
+            #pausar o loop
+            pausa 
+        # senão
+        mais :
+            #exibir valor inválido  
+            print ( "valor inválido" )
+            # variável que permite armazenar um valor que pode ser reiniciado enquanto
+            nota  =  int ( input ( "Informe um valor:" ))
+
+# função principal 
+def  main ():
+    # variável onde será armazenado um número fornecido pelo usuário 
+    nota  =  int ( input ( "Informe um valor:" ))
+    #chamar função note (nota)
+    note ( nota )
+#chamar função principal 
+main ()
