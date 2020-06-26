@@ -1,0 +1,7 @@
+'' '9 - Crie um programa que imprime na tela apenas os números ímpares entre 1 e 50' ''
+#Danilo Souza # 24/04/2020.
+ 
+alance  =  int ( input ( 'informe o alcance final:' ))
+para  x  no  intervalo ( 1 , alance ):
+    se  x  %  2  ! =  0 :
+        impressão ( x )
