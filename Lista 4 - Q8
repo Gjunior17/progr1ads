@@ -1,0 +1,45 @@
+'' '8 - Faça um programa que use uma data no formato dd / mm / aaaa e determine se é a mesma uma data válida.' ''
+data de definição ():
+        #Se mes for igual a 1, 3, 5, 7, 8, 10, 12
+        se  mes  ==  1  ou  mes  ==  3  ou  mes  ==  5  ou  mes  ==  7  ou  mes  ==  8  ou  mes  ==  10  ou  mes  ==  12 :
+                #Se dia para menor igual a 31
+                se  dia <= 31 :
+                        #Exibir data válido
+                        print ( "data válido" )
+                # Senão
+                mais :
+                        #Exibir data inválida
+                        print ( "data inválida" )
+        #Se mes for igual 2
+        elif  mes  ==  2 :
+                #Se dia para menor igual a 28
+                se  dia  <= 28 :
+                        #Exibir data válido
+                        print ( "data válido" )
+                # Senão
+                mais :
+                        #Exibir data inválida
+                        print ( "data inválida" )
+        #Se mes for igual a 4, 6, 9 e 11
+        elif  mes  ==  4  ou  mes  ==  6  ou  mes  ==  9  ou  mes  ==  11 :
+                #Se dia para menor igual a 30
+                se  dia  <= 30 :
+                        #Exibir data válido
+                        print ( "data válido" )
+                # Senão 
+                mais :
+                        #Exibir data inválida
+                        print ( "data inválida" )
+
+# função principal
+def  main ():
+        # Variável dia que será permitido pelo usuário
+        dia  =  int ( input ( "Insira o dia que você deseja:" ))
+        # Variável mês que será permitido pelo usuário
+        mes  =  int ( input ( "Insira o mês que você deseja:" ))
+        # Variável ano que estará disponível 
+        ano  =  int ( input ( "Insira o ano que você deseja:" ))
+        #chamar função date
+        data ( dia , mes , ano )
+#chamar função principal
+main ()
