@@ -1,0 +1,8 @@
+'' '6 Faça um programa que imprima na tela os números de 1 a 20, um abaixo do outro.
+Depois de modificar ou programar para o número de mostre os números um ao lado do outro '' '
+#para n no alcance 1 até 20
+para  n  no  intervalo ( 1 , 21 ):
+    #exibir uma lista de alcance de 1 a 20
+    print ( lista ( intervalo ( 1 , 21 )))
+    #pausar o loop
+    pausa
