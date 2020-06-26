@@ -1,0 +1,99 @@
+'' '4 - Faça um programa que lê como duas notas parciais gravadas por um aluno em uma disciplina ao longo de um semestre e calcule a sua média. A apresentação de conceitos obedece à tabela abaixo:
+Média de Aproveitamento Conceito
+  Entre 9.0 e 10.0 A
+  Entre 7.5 e 9.0 B
+  Entre 6.0 e 7.5 C
+  Entre 4.0 e 6.0 D
+  Entre 4.0 e zero E
+O algoritmo deve mostrar na tela como notas, a média, o conceito correspondente e a mensagem "APROVADO", para o conceito A, B ou C ou "REPROVADO", para o conceito para D ou E. '' '
+def  m ( nota1 , nota2 ):
+	#retornar para função mo valor da média aritmética
+	return ( nota1  +  nota2 ) / 2
+# Função onde terá como condições para saber a nota final do aluno.
+def  media ( nota1 , nota2 ):
+	#media vai armazenar ou retornar o m
+	media  =  m ( nota1 , nota2 )
+	#se a média para maior que 9 e menor igual para 10
+	se  mídia  >  9  <=  10 :
+		# variável onde será armazenado o conceito
+		conceito  =  "A"
+		#exibir a primeira nota
+		print ( "Sua primeira nota é de% .1f"  %  nota1 )
+		#exibir a segunda nota
+		print ( "Sua segunda nota é de% .1f"  %  nota2 )
+		#exibir a média final
+		print ( "Sua média final será de% .1f"  %  mídia )
+		#exibir o conceito 
+		print ( "Seu conceito é de% s"  %  conceito )
+		#exibir que está aprovado
+		print ( "APROVADO" )
+	#se mídia para maior que 7,5 e menor igual a 9
+	elif  media  >  7,5  <=  9 :
+		# variável armazém ou conceito
+		conceito  =  "B"
+		#exibir a primeira nota
+		print ( "Sua primeira nota é de% .1f"  %  nota1 )
+		#exibir a segunda nota
+		print ( "Sua segunda nota é de% .1f"  %  nota2 )
+		#exibir a média final
+		print ( "Sua média final será de% .1f"  %  mídia )
+		#exibir o conceito 
+		print ( "Seu conceito é de% s"  %  conceito )
+		#exibir aprovado
+		print ( "APROVADO" )
+	#Se media para maior que 6 e menor igual a 7,5
+	 mídia  elif >  6  <=  7.5 :
+		# variável que armazena o conceito
+		conceito  =  "C"
+		#exibir a primeira nota
+		print ( "Sua primeira nota é de% .1f"  %  nota1 )
+		#exibir a segunda nota
+		print ( "Sua segunda nota é de% .1f"  %  nota2 )
+		#exibir a média final
+		print ( "Sua média final será de% .1f"  %  mídia )
+		#exibir o conceito
+		print ( "Seu conceito é de% s"  %  conceito )
+		#exibir aprovado
+		print ( "APROVADO" )
+	#se mídia para maior que 4 e menor igual a 6
+	 mídia  elif >  4  <=  6 :
+		# variável onde armazena o conceito
+		conceito  =  "D"
+		#exibir a primeira nota
+		print ( "Sua primeira nota é de% .1f"  %  nota1 )
+		#exibr a segunda nota
+		print ( "Sua segunda nota é de% .1f"  %  nota2 )
+		#exibir a média final
+		print ( "Sua média final será de% .1f"  %  mídia )
+		#exibir o conceito
+		print ( "Seu conceito é de% s"  %  conceito )
+		#exibir reprovado
+		print ( "REPROVADO" )
+	#se mídia para igual a 0 e maior que 4 
+	elif  media  ==  0  <  4 :
+		# variável que armazena o conceito
+		conceito  =  "E"
+		#exibir a primeira nota
+		print ( "Sua primeira nota é de% .1f"  %  nota1 )
+		#exibir a segunda nota 
+		print ( "Sua segunda nota é de% .1f"  %  nota2 )
+		#exibir uma final de mídia
+		print ( "Sua média final será de% .1f"  %  mídia )
+		#exibir o conceito
+		print ( "Seu conceito é de% s"  %  conceito )
+		#exibir reprovado
+		print ( "REPROVADO" )
+
+# Função principal
+def  main ():
+	# Variável onde será armazenado ou o valor da primeira nota fornecida pelo usuário
+	nota1  =  float ( entrada ( "Insira sua primeira nota:" ))
+	# Variável onde será armazenado ou o valor da segunda nota fornecida pelo usuário
+	nota2  =  float ( entrada ( "Insira sua segunda nota:" ))
+	#chamar a função m
+	m ( nota1 , nota2 )
+	#chamar a função media
+	mídia ( nota1 , nota2 )
+
+#chamar função principal
+main ()
